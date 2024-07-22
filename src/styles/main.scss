@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #F57E67;
+    font-size: 32px;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+
+    @media (max-width: 768px){
+        font-size: 20px;
+    }
+}
+
+.meu-aniversario{
+    background-image: url(../images/Fundo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: 74px;
+    padding-bottom: 90px;
+
+    @media (max-width: 768px){
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+
+    .container{
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+
+        @media (max-width: 768px){
+            width: 80%;
+        }
+
+        @media (min-width: 769px) and (max-width: 1023px){
+            width: 90%;
+        }
+
+        .title{
+            font-size: 96px;
+            font-weight: bold;
+            margin-bottom: 64px;
+
+            @media (max-width: 768px){
+                font-size: 72px;
+                margin-top: 56px;
+            }
+        }
+
+        .form{
+            display: flex;
+            justify-content: space-between;
+            gap: 64px;
+            align-items: center;
+            margin-top: 16px;
+            margin-bottom: 48px;
+
+            @media (max-width: 768px){
+                display: block;
+            }
+
+            &__email{
+                width: 100%;
+                padding: 16px;
+                border: none;
+                border-radius: 6px;
+                background-color: #D9C9A5;
+                color: #931E1E;
+    
+                text-align: left;
+                padding-left: 33px;
+                display: block;
+
+                @media (max-width: 768px){
+                    margin-bottom: 8px;
+                }
+    
+                &::placeholder{
+                    color: #931e1e7c;;
+                    font-weight: bold;
+                }
+            }
+
+            &__button{
+                padding: 16px;
+                border: none;
+                height: 100%;
+                border-radius: 6px;
+                background-color: #D9C9A5;
+                color: #931E1E;
+                font-weight: bold;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: #931E1E;
+                    color: #D9C9A5;
+                }
+            }
+        }
+
+
+        .contagem{
+            margin-top: 29px;
+            font-size: 64px;
+
+            @media (max-width: 768px){
+                font-size: 32px;
+            }
+        }
+        
+    }
+}
+
